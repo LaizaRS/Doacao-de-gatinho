@@ -1,0 +1,278 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1922px;
+  height: 110px;
+  margin: auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.cor-span {
+  font-family: SF New Republic;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30.17px;
+  text-align: left;
+}
+
+.cor-span p {
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+
+.cor-span span:nth-of-type(1) {
+  color: #FF8B88;
+  margin-left: 10px;
+}
+
+.cor-span span:nth-of-type(2) {
+  color: #1268AE;
+  margin-left: 0;
+}
+
+.centralizar-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.centralizar-menu ul {
+  align-items: center;
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+button {
+  background-color: #1268AE;
+  color: white;
+  width: 186px;
+  height: 50px;
+  border: none;
+  border-radius: 7.83px;
+  font-size: 17px;
+  font: roboto;
+  font-weight: 400;
+}
+
+.carrosel {
+  position: relative;
+}
+
+.carrocel-bg {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.carrocel-bg1 {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: calc(100% + 100px);
+  z-index: 1;
+  @media(max-width:900px ){
+    display: none;
+  }
+}
+
+.section-header-content {
+  z-index: 4; 
+  position: relative;
+}
+
+.carousel-control-next-icon, 
+.carousel-control-prev-icon {
+  margin-top: 90%;
+}
+
+.carrosel-flex{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around; 
+  align-items: center; 
+}
+
+.escrita-dentro-carrosel{
+  display: flex;
+  flex-direction: column;
+  margin-top: -30%;
+}
+
+.escrita-dentro-carrosel button{
+  width: 343px;
+  height: 98px;
+  top: 551px;
+  left: 360px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 7.83px;
+  font-size: 30px;
+  font: roboto;
+  font-weight: 400;
+}
+
+h5 {
+  font-family: SF New Republic;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60.34px;
+  text-align: left;
+}
+
+.apoie{
+  margin: auto;
+  padding: 40px;
+  width: 1055px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.apoie button:first-child {
+  background-color: #FF8B88;
+  width: 262px;
+  height: 43px;
+  Size:20px;
+  font: roboto;
+  font-weight: 400;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.circulos {
+  display: flex;
+ justify-content: space-between;
+ margin-bottom: 20px;
+  
+}
+
+.bolinhas-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.bolinhas {
+  display: flex;
+  align-items: center;
+}
+
+.bolinhas .left p{
+  margin: 0 10px 0 0;
+}
+
+.bolinhas .right p{
+  margin: 0 0 0 10px;
+}
+
+.bolinha{
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background: #FF8D8A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circulo-de-fora {
+  margin-top: 20px;
+  width: 498px;
+  height: 498px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #FF8D8A 0%, rgba(153, 85, 83, 0) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circulo-de-dentro {
+  width: 408px;
+  height: 408px;
+  background: #FF8D8A;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.circulo-de-dentro p{
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+}
+
+.circulo-de-dentro img:first-child {
+  width: 112px;
+  height: 132px;
+}
+
+.circulo-de-dentro img:nth-child(1) {
+  width: 97px;
+  height: 89px;
+  margin-top: 50px;
+}
+
+.second  {
+  width: 489px;
+  height: 98px;
+  margin-top: 20px;
+  border-radius: 7.83px;
+  background: #014C87;
+
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 39px;
+  text-align: center;
+}
+
+
+
+$carousel-control-color:             $white;
+$carousel-control-width:             15%;
+$carousel-control-opacity:           .5;
+$carousel-control-hover-opacity:     .9;
+$carousel-control-transition:        opacity .15s ease;
+
+$carousel-indicator-width:           30px;
+$carousel-indicator-height:          3px;
+$carousel-indicator-hit-area-height: 10px;
+$carousel-indicator-spacer:          3px;
+$carousel-indicator-opacity:         .5;
+$carousel-indicator-active-bg:       $white;
+$carousel-indicator-active-opacity:  1;
+$carousel-indicator-transition:      opacity .6s ease;
+
+$carousel-caption-width:             70%;
+$carousel-caption-color:             $white;
+$carousel-caption-padding-y:         1.25rem;
+$carousel-caption-spacer:            1.25rem;
+
+$carousel-control-icon-width:        2rem;
+
+$carousel-control-prev-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
+$carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
+
+$carousel-transition-duration:       .6s;
+$carousel-transition:                transform $carousel-transition-duration ease-in-out; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
