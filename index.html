@@ -15,7 +15,6 @@
 </head>
 
 <body>
-
   <header>
     <nav>
       <div class="logo">
@@ -28,16 +27,24 @@
       </div>
       <div class="centralizar-menu">
         <ul>
-          <li><a href="*"></a>Home</li>
-          <li><a href="*"><i class="ph ph-paw-print"></i> Sobre</a></li>
-          <li><a href="*">Quero Ajudar</a></li>
-          <li><a href="*">Notícias</a></li>
+          <li>
+            <a href="#!" class="nav-link" data-target="carrosel">Home</a>
+          </li>
+          <li>
+            <a href="#!" class="nav-link" data-target="sobre"><i class="ph ph-paw-print"></i> Sobre</a>
+          </li>
+          <li>
+            <a href="#!" class="nav-link" data-target="adocao">Quero Ajudar</a>
+          </li>
+          <li><a href="#!" class="nav-link" data-target="apoie">Notícias</a></li>
           <li><a href="*">Contato</a></li>
-          <li><a href="*"><button><i class="ph ph-paw-print"></i>Quero Adotar</button></a></li>
+          <li><a href="#!" class="nav-link" data-target="adocao"><button><i class="ph ph-paw-print"></i>Quero
+                Adotar</button></a></li>
         </ul>
       </div>
     </nav>
   </header>
+
   <section class="carrosel mb-5">
     <img class="carrocel-bg" src="img/bg1.png" alt="">
     <img class="carrocel-bg1" src="img/bg2.png" alt="">
@@ -103,6 +110,7 @@
       </div>
     </div>
   </section>
+
   <section class="apoie">
     <button> Apoie e faça a sua parte </button>
     <h1> Apoie e colabore para que </h1>
@@ -164,7 +172,283 @@
     </div>
   </section>
 
+  <section class="adocao">
+    <div class="tudo">
+
+      <div class="cabecalho">
+        <h1>Gatos para adocção</h1>
+        <div class="dropdown">
+
+          <select name="Estado" id="estado">
+            <option value="Goias">Goias</option>
+            <option value="Mato Grosso">Mato Grosso</option>
+            <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+            <option value="São Paulo">São Paulo</option>
+          </select>
+
+          <select name="Cidade" id="cidade">
+            <option value="Goiânia">Goiânia</option>
+            <option value="Anápolis">Anápolis</option>
+            <option value="Rio Verde">Rio Verde</option>
+            <option value="Cuiabá">Cuiabá</option>
+            <option value="Rondonópolis">Rondonópolis</option>
+            <option value="Sinop">Sinop</option>
+            <option value="Campo Grande">Campo Grande</option>
+            <option value="Dourados">Dourados</option>
+            <option value="Corumbá">Corumbá</option>
+            <option value="São Paulo">São Paulo</option>
+            <option value="Campinas">Campinas</option>
+            <option value="Santos">Santos</option>
+          </select>
+
+          <select name="Genero" id="genero">
+            <option value="Macho">Macho</option>
+            <option value="Femea">Femea</option>
+          </select>
+
+          <button class="first">Buscar <i class="ph ph-paw-print"></i></button>
+        </div>
+      </div>
+
+      <div class="gatinhos">
+
+        <div class="gato-card">
+          <div class="gato-foto">
+            <img src="img/Rectangle 631.png" alt="">
+          </div>
+          <div class="vetor">
+            <img src="img/Group 319.png" alt="">
+          </div>
+          <div class="informacao">
+            <h4>Milk</h4>
+            <p>Macho/filhote</p>
+            <p>Rio Verde Goias Go <i class="ph ph-map-pin-line"></i></p>
+          </div>
+        </div>
+
+        <div class="gato-card">
+          <div class="gato-foto">
+            <img src="img/Rectangle 632.png" alt="">
+          </div>
+          <div class="vetor">
+            <img src="img/Group 319.png" alt="">
+          </div>
+          <div class="informacao">
+            <h4>Tini</h4>
+            <p>Macho/filhote</p>
+            <p>Sinop Mato Grosso MG <i class="ph ph-map-pin-line"></i></p>
+          </div>
+        </div>
+
+        <div class="gato-card">
+          <div class="gato-foto">
+            <img src="img/Rectangle 633.png" alt="">
+          </div>
+          <div class="vetor femea">
+            <img class="img-de-baixo" src="img/Group 321.png" alt="">
+            <img class="img-de-cima" src="img/Vector femea.png" alt="">
+          </div>
+          <div class="informacao">
+            <h4>Zion</h4>
+            <p>Femea/filhote</p>
+            <p>Dourados Mato Grosso do Sul MS <i class="ph ph-map-pin-line"></i></p>
+          </div>
+        </div>
+
+        <div class="gato-card">
+          <div class="gato-foto">
+            <img src="img/Rectangle 634.png" alt="">
+          </div>
+          <div class="vetor femea">
+            <img class="img-de-baixo" src="img/Group 321.png" alt="">
+            <img class="img-de-cima" src="img/Vector femea.png" alt="">
+          </div>
+          <div class="informacao">
+            <h4>Bird</h4>
+            <p>Femea/filhote</p>
+            <p>Campinas São Paulo SP <i class="ph ph-map-pin-line"></i></p>
+          </div>
+        </div>
+
+
+      </div>
+
+      <button>Ver Todos <i class="ph ph-paw-print"></i></button>
+
+
+    </div>
+    <div class="imagembg">
+      <img src="img/bgtriangulo.png" alt="">
+    </div>
+  </section>
+
+  <section class="sobre">
+    <div class="escrita-cabecalho">
+      <h1>Conheça a ONG TinieBird Cats</h1>
+      <p>Existem muitos <strong>gatos a espera de um lar</strong> e com muito amor para oferecer. Nós fazemos essa ponte
+      </p>
+      <p> para que você adote um amigo e faça a diferença na vida de um animal carente.</p>
+    </div>
+
+    <div class="varias-divs">
+      <div class="gatao">
+        <img src="img/image.png" alt="gatao">
+      </div>
+      <div class="quadrado-de-fora">
+        <div class="quadrado-de-dentro">
+          <p>Como Tudo Começou</p>
+        </div>
+
+      </div>
+      <div class="cascata-mais-botao">
+        <div class="cascata">
+          <div class="complicacaoesquerda">
+            <div class="complicacao-esquerda">
+              <div class="flex-row">
+                <h1>2016</h1>
+                <div class="pata-rosa">
+                  <img src="img/pata bg rosa.png" alt="pegada de gato">
+                </div>
+                <div class="imgCentralizada">
+                  <img src="img/linhaDosInfternos.png" alt="">
+                </div>
+              </div>
+              <div class="flex-row-nao">
+                <p>Primeira Adoção Independente</p>
+                <img class="flex-row-nao-esquerda" src="img/mãoSeguraPata.png" alt="mão e pata de gato">
+              </div>
+            </div>
+            <div class="vazia-ocupar-espaco"></div>
+            <div class="complicacao-esquerda">
+              <div class="flex-row">
+                <h1>2018</h1>
+                <div class="pata-rosa">
+                  <img src="img/pata bg rosa.png" alt="pegada de gato">
+                </div>
+                <div class="imgCentralizada">
+                  <img src="img/linhaDosInfternos.png" alt="">
+                </div>
+              </div>
+              <div class="flex-row-nao">
+                <p>Primeira Adoção Independente</p>
+                <img class="flex-row-nao-esquerda" src="img/mãoSeguraPata.png" alt="mão e pata de gato">
+              </div>
+            </div>
+          </div>
+          <img src="img/grandeLinha.png" alt="">
+          <div class="complicacaodireita">
+            <div class="vazia-ocupar-espaco"></div>
+            <div class="complicacao-direita">
+              <div class="flex-row">
+                <div class="imgCentralizada">
+                  <img src="img/linhaDosInfternos.png" alt="">
+                </div>
+                <div class="pata-rosa">
+                  <img src="img/pata bg rosa.png" alt="pegada de gato">
+                </div>
+                <h1>2017</h1>
+              </div>
+              <div class="flex-row-nao">
+                <img class="flex-row-nao-direita" src="img/gatoAzul.png" alt="mão e pata de gato">
+                <p>Primeira Adoção Independente</p>
+              </div>
+            </div>
+            <div class="vazia-ocupar-espaco"></div>
+            <div class="complicacao-direita">
+              <div class="flex-row">
+                <div class="imgCentralizada">
+                  <img src="img/linhaDosInfternos.png" alt="">
+                </div>
+                <div class="pata-rosa">
+                  <img src="img/pata bg rosa.png" alt="pegada de gato">
+                </div>
+                <h1>2019</h1>
+              </div>
+              <div class="flex-row-nao">
+                <img class="flex-row-nao-direita" src="img/gatoAzul.png" alt="mão e pata de gato">
+                <p>Primeira Adoção Independente</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <button>Saiba mais <i class="ph ph-paw-print"></i> </button>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="perguntas-frequentes">
+
+    <div class="perguntasFrequentes">
+      <img class="bgpatacabeçaprabaixo" src="img/bgpatacabeçaprabaixo.png" alt="">
+
+      <div class="muitos-retangulos">
+        <div class="escrita-perguntas-frequentes">
+          <img src="img/quadrado-interrogação.png" alt="">
+          <h1>Perguntas Frequentes </h1>
+        </div>
+        <div class="sanfona">
+
+
+          <button class="accordion">Como posso adotar um gatinho?</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio velit esse suscipit ad. Impedit,
+              similique
+              hic est laborum adipisci in laboriosam deleniti reprehenderit maiores voluptatum numquam quo, velit
+              rem
+              facilis?</p>
+          </div>
+
+
+          <button class="accordion">As adoções são gratuitas?</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum delectus aspernatur, nihil odio
+              magni
+              nam at accusantium iure possimus saepe similique est assumenda tenetur deserunt doloremque mollitia
+              non.
+              Nemo, at!</p>
+          </div>
+
+
+          <button class="accordion">O que preciso saber antes de adotar um gato?</button>
+          <div class="panel">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur quia ad, sunt minus quasi,
+              consectetur
+              expedita asperiores culpa sed voluptatum iure aspernatur quisquam numquam quos ab unde doloribus error
+              magni.</p>
+          </div>
+
+
+          <button class="accordion">Os gatos para adoção são castrados?</button>
+          <div class="panel">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, ipsa porro eos error, libero
+              delectus
+              amet in ea magnam eaque iste iusto distinctio reprehenderit itaque aperiam aliquid? Nihil, nisi
+              delectus?
+            </p>
+          </div>
+
+
+          <button class="accordion">Como fazer a adaptação em casa de um gato adotado?</button>
+          <div class="panel">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur quia ad, sunt minus quasi,
+              consectetur
+              expedita asperiores culpa sed voluptatum iure aspernatur quisquam numquam quos ab unde doloribus error
+              magni.</p>
+          </div>
+
+
+
+        </div>
+      </div>
+      <img class="bgpatacabeçapraCima" src="img/bgpatacabeçapraCima.png" alt="">
+    </div>
+    <img class="bg-triangouloinvertido" src="img/bg-triangouloinvertido.png" alt="">
+  </section>
+
 </body>
 
+<script src="script.js"></script>
 
 </html>
