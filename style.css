@@ -651,8 +651,6 @@ align-items: flex-end;
   align-self: end;
 }
 
-
-
 .escrita-perguntas-frequentes {
   padding-top: 50px;
   display: flex;
@@ -663,6 +661,95 @@ align-items: flex-end;
 .bg-triangouloinvertido{
   margin-top: -7px;
   align-self: center;
+}
+
+
+.carrosel-depoimentos{
+  max-width: 1900px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.escrita-depoimentos {
+  width: 383px;
+  height: 105px;
+}
+
+.carroselDepoimentos{
+  width: 914px;
+}
+
+.card-editavel-carrosel{
+ display: flex;
+ justify-content: space-around;
+}
+
+.dois-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circulo-img {
+  width: 117px;
+  height: 115px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+ margin-bottom: -50px;
+  border-radius: 100px;
+  opacity: 0.5px;
+  background: linear-gradient(180deg, #FF8B87 0%, rgba(255, 139, 135, 0) 100%);
+}
+
+.imgam-circulo-miuda { 
+  width: 85.05px;
+  height: 83px;
+  border-radius: 100px;
+}
+
+.escrita-card-depoimento {
+  width: 362px;
+  height: 340px;
+  border-radius: 10px;
+  box-shadow: 0px 11px 88.6px -2px #FF8B8745;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.escrita-card-depoimento p,
+.escrita-card-depoimento h2,
+.escrita-card-depoimento h1 {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 35px;
+  text-align: center;
+}
+
+.escrita-card-depoimento h1 {
+  font-weight: 700;
+}
+
+.parceiros{
+max-width: 1900px;
+margin: auto;
+text-align: center;
+padding-bottom: 20px;
+margin-bottom: 20px;
+margin-top: 30px;
+border-bottom: 1px solid black;
+}
+
+
+
+.patrocinios-carrosel {
+  display: flex;
+  max-width: 1900px;
+  margin: auto;
+  padding: 40px;
+  justify-content: space-between;
 }
 
 $carousel-control-color:             $white;
