@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+root {
+  --background-image: url('img/bg-retangulo-azul.png');
+}
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -28,7 +32,7 @@ nav .nav-link{
 }
 
 nav .nav-link:hover{
-color: #FF8B88;
+  color: #FF8B88;
 }
 
 .cor-span {
@@ -182,9 +186,8 @@ h5 {
 
 .circulos {
   display: flex;
- justify-content: space-between;
- margin-bottom: 20px;
-  
+  justify-content: space-between;
+  margin-bottom: 20px; 
 }
 
 .bolinhas-display {
@@ -435,12 +438,12 @@ h5 {
 }
 
 .escrita-cabecalho h1{
-font-family: SF New Republic;
-font-size: 45px;
-font-weight: 400;
-line-height: 56.25px;
-text-align: center;
-color: #1A1442;
+  font-family: SF New Republic;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 56.25px;
+  text-align: center;
+  color: #1A1442;
 }
 
 .escrita-cabecalho p {
@@ -482,9 +485,7 @@ color: #1A1442;
   font-size: 45px;
   font-weight: 400;
   line-height: 45.25px;
- 
-  color: white;
-  
+  color: white; 
 }
 
 .varias-divs{
@@ -501,10 +502,10 @@ color: #1A1442;
 }
 
 .complicacao-esquerda {
-width: 350px;
-display: flex;
-flex-direction: column;
-align-items: flex-end;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .vazia-ocupar-espaco {
@@ -697,7 +698,7 @@ align-items: flex-end;
   display: flex;
   justify-content: center;
   align-items: center; 
- margin-bottom: -50px;
+  margin-bottom: -50px;
   border-radius: 100px;
   opacity: 0.5px;
   background: linear-gradient(180deg, #FF8B87 0%, rgba(255, 139, 135, 0) 100%);
@@ -733,16 +734,14 @@ align-items: flex-end;
 }
 
 .parceiros{
-max-width: 1900px;
-margin: auto;
-text-align: center;
-padding-bottom: 20px;
-margin-bottom: 20px;
-margin-top: 30px;
-border-bottom: 1px solid black;
+  max-width: 1900px;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  border-bottom: 1px solid black;
 }
-
-
 
 .patrocinios-carrosel {
   display: flex;
@@ -750,6 +749,185 @@ border-bottom: 1px solid black;
   margin: auto;
   padding: 40px;
   justify-content: space-between;
+}
+
+.fale-conosco {
+  margin:  auto;
+  max-width: 1900px; 
+  height: 730px;
+  position: relative;
+  background: var(--background-image);
+}
+
+.conosco{
+  margin-top: 150px;
+}
+
+.bg-retangulo-azul{
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.todo-o-resto button {
+  width: 489px;
+  height: 98px;
+  border-radius: 7.83px;
+  background: #014C87;
+  align-self: center;
+  margin-top: 60px;
+}
+
+.todo-o-resto {
+  z-index: 1;
+  display: flex;
+  margin-left: 40px;
+  justify-content: space-around;
+}
+
+.imagem-vetor{
+  z-index: 1;
+}
+
+form {
+  z-index: 1;
+  height: 730px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: 15%;
+}
+
+.border-white {
+  border: 1px solid white;
+  border-radius: 6px;
+}
+
+.border-white label{
+  padding-left: 20px;
+}
+
+.input-formulario {
+  width: 489px;
+  height: 64px;
+  background-color: #1167ad00;
+  border: 1px solid white;
+  border: none;
+  border-radius: 6px;
+  padding-left: 20px;
+}
+
+.mensagem{
+  height: 127px;
+  }
+
+.bg-cat-transparan{
+  margin-top: -10%;
+  position: absolute;
+  z-index: 2;
+}
+
+.bg-V-rosa-de-lado{
+  margin-top: -18.4%;
+  align-self: flex-end;
+  position: relative;
+  bottom: 51px;
+  left: 75px;
+}
+
+
+.ainda-com-duvida {
+  margin: auto;
+  max-width: 1902px;
+  background: #E7807D;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.centralizando{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.centralizando h1{
+ margin: 55px 0 0 0 ;
+}
+
+.card-ainda-com-duvida {
+  width: 373px;
+  height: 430px;
+  border-radius: 9px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.display-flex{
+  display: flex;
+  z-index: 1;
+  gap: 20px;
+}
+
+.card-ainda-com-duvida .ph {
+  font-size: 40px;
+}
+
+.newsletter{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter input {
+  width: 952px;
+  height: 54px;
+  padding: 20px;
+  border-radius: 5px ;
+  border: 1px solid white;
+  background-color: #014d8700;
+}
+
+.rodape {
+  margin: auto;
+  max-width: 1902px;
+}
+
+.centralizando-rodape {
+  display: flex;
+  max-width: 1902px;
+  justify-content: space-around;
+}
+.logo-rodape{
+  margin-top: -25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.span-rodape {
+  font-family: SF New Republic;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30.17px;
+}
+
+.span-rodape span:nth-of-type(2) {
+  color: #FF8B88;
+}
+
+.span-rodape span:nth-of-type(3) {
+  color: #1268AE;
 }
 
 $carousel-control-color:             $white;
